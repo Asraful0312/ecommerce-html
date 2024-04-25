@@ -4,7 +4,6 @@
   },
   "scripts": {
     "tailwind": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch ",
-    "build": "npm run generate-html && vite build",
     "generate-html": "mkdir -p dist && cp index.html dist/"
   }
 }
