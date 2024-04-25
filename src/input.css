@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: 200 700;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  @apply text-darkGray;
+}
+
+.hover-animation {
+  @apply translate-y-7 opacity-0 invisible  group-hover:translate-y-0 group-hover:visible group-hover:opacity-100 transition-all duration-300;
+}
+
+.hover-animation-blogs {
+  @apply translate-y-7 opacity-0 invisible  group-hover/blogs:translate-y-0 group-hover/blogs:visible group-hover/blogs:opacity-100 transition-all duration-300;
+}
+
+.peer-hover-animation {
+  @apply translate-y-7 opacity-0 invisible  peer-hover:translate-y-0 peer-hover:visible peer-hover:opacity-100 transition-all duration-300;
+}
+
+.product-options {
+  @apply flex items-center min-w-24 rounded border border-primary absolute bg-white z-50 translate-y-7 opacity-0 invisible group-hover/product:translate-y-0 group-hover/product:visible group-hover/product:opacity-100 transition-all duration-300;
+}

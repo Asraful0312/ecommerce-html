@@ -1,0 +1,3158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nest</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header area start -->
+    <header class="bg-white">
+      <div
+        class="h-16 w-full bg-[url(/images/notice.jpg)] p-5 flex items-center justify-center xl:hidden object-top"
+      >
+        <p class="text-darkGreen font-bold">
+          Senior’s Member Discount Days! Save 25% Each Tuesday
+        </p>
+      </div>
+      <div class="container">
+        <!-- header top  start-->
+        <div
+          class="hidden items-center justify-between py-3 border-b border-gray-200 xl:flex"
+        >
+          <ul class="flex items-center">
+            <li>
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >My Account</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >Wish List</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >Order Traking</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="font-bold text-sm text-primary hover:text-darkRed transition-colors duration-200"
+          >
+            Supper Value Deals - Save more with coupons
+          </a>
+          <ul class="flex items-center">
+            <li>
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >Need help? Call Us:
+                <span class="text-primary">+1800900122</span></a
+              >
+            </li>
+            <li class="relative group">
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >English <i class="fa-solid fa-angle-down text-xs"></i>
+              </a>
+              <div
+                class="absolute bg-white z-40 p-4 left-0 border border-gray-200 space-y-2 top-7 hover-animation"
+              >
+                <div
+                  class="flex items-center gap-2 text-sm text-darkGray cursor-pointer"
+                >
+                  <i class="fa-solid fa-globe"></i>
+                  <p>English</p>
+                </div>
+                <div
+                  class="flex items-center gap-2 text-sm text-darkGray cursor-pointer"
+                >
+                  <i class="fa-solid fa-globe"></i>
+                  <p>French</p>
+                </div>
+                <div
+                  class="flex items-center gap-2 text-sm text-darkGray cursor-pointer"
+                >
+                  <i class="fa-solid fa-globe"></i>
+                  <p>Dutch</p>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <a
+                class="text-darkGray text-sm px-2 border-r border-gray hover:text-black transition-all duration-300"
+                href="#about"
+                >INR <i class="fa-solid fa-angle-down text-xs"></i
+              ></a>
+              <div
+                class="absolute z-40 bg-white p-4 -left-8 border border-gray-200 space-y-2 top-7 hover-animation"
+              >
+                <div
+                  class="flex items-center gap-2 text-sm text-darkGray cursor-pointer"
+                >
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <p>USD</p>
+                </div>
+                <div
+                  class="flex items-center gap-2 text-sm text-darkGray cursor-pointer"
+                >
+                  <i class="fa-solid fa-euro-sign"></i>
+                  <p>EU</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- header top end -->
+
+        <!-- header center -->
+        <div class="py-7 border-b border-gray-200">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center justify-between gap-24 w-full">
+              <!-- logo -->
+              <a href="#">
+                <img width="170" src="/images/logo.png" alt="logo" />
+              </a>
+              <!-- search -->
+              <div
+                class="hidden xl:flex items-center justify-between w-full border border-primary py-1 pl-5 pr-1 rounded gap-5 relative"
+              >
+                <input class="w-full outline-none peer" type="text" />
+                <button
+                  class="bg-primary text-white font-bold px-5 py-2 rounded hover:bg-amber transition-colors duration-500"
+                >
+                  Search
+                </button>
+                <div
+                  class="absolute left-0 right-0 top-14 bg-white border border-lightGray rounded p-5 z-50 transition-all duration-300 -translate-y-11 opacity-0 invisible peer-focus:translate-y-0 peer-focus:opacity-100 peer-focus:visible"
+                >
+                  <p class="hidden">No Result</p>
+                  <div class="flex items-center gap-3">
+                    <img
+                      class="size-7 rounded"
+                      src="/images/cat-1.png"
+                      alt="product image"
+                    />
+                    <a href=""
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing.</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- mobile cart and menu -->
+              <div class="relative xl:hidden flex items-center gap-6">
+                <!-- mobile cart -->
+                <div
+                  class="relative flex items-center gap-2 cursor-pointer group"
+                >
+                  <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                  <p class="text-darkGray">Cart</p>
+                  <div
+                    class="bg-white absolute top-10 right-0 p-5 border border-gray-200 w-[400px] shadow-sm rounded-lg hover-animation z-50"
+                  >
+                    <p class="text-center text-darkGray mt-5">
+                      No product in the cart
+                    </p>
+                    <div class="space-y-4 pt-3">
+                      <div class="flex items-center gap-7">
+                        <img
+                          class="size-10"
+                          src="/images/product-2-1.jpg"
+                          alt="product"
+                        />
+                        <p class="truncate text-center">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quia, maxime!
+                        </p>
+                        <button
+                          class="bg-primary text-white font-bold px-3 py-2 rounded hover:bg-amber transition-colors duration-500 text-sm"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -top-5 left-5 flex items-center justify-center bg-primary text-white text-sm rounded-full size-5"
+                >
+                  <span>0</span>
+                </div>
+                <button id="mobileMenuBtn">
+                  <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+
+                <!-- mobile menu -->
+                <div
+                  id="mobileMenuContainer"
+                  class="fixed bg-black/50 h-full top-0 left-0 w-full flex items-start z-50 hidden"
+                >
+                  <div
+                    id="mobileMenu"
+                    class="w-[80%] h-full bg-white p-5 border-r border-gray-200 overflow-y-auto z-[999] relative"
+                  >
+                    <!-- menu close button -->
+                    <div id="menuCloseBtn" class="absolute top-7 left-5">
+                      <div
+                        class="flex items-center justify-center bg-primary/20 text-darkGray group size-7 rounded-full cursor-pointer"
+                      >
+                        <i
+                          class="fa-solid fa-x text-xs group-hover:rotate-180 transition-all duration-300"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <!-- menu items -->
+                    <div class="border-t border-lightGray pt-7 mt-20">
+                      <!-- menu search bar  -->
+                      <div
+                        class="flex items-center justify-between gap-5 py-3 px-5 bg-[#F2F3F4] rounded"
+                      >
+                        <input
+                          class="w-full text-sm bg-transparent outline-none"
+                          placeholder="Search..."
+                          type="text"
+                        />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <!-- muenu and category button -->
+                      <div
+                        class="text-sm flex flex-wrap items-center gap-3 mt-6 mb-4"
+                      >
+                        <button
+                          id="homeListBtn"
+                          class="py-2 px-12 bg-lightOrange text-primary font-bold rounded"
+                        >
+                          Home
+                        </button>
+                        <button
+                          id="categoryListBtn"
+                          class="text-sm py-2 px-12 bg-[#F2F3F4] text-darkGray font-bold rounded"
+                        >
+                          Category
+                        </button>
+                      </div>
+
+                      <!-- home options -->
+                      <div id="homeList" class="divide-y">
+                        <div class="flex items-center justify-between py-2">
+                          <h1 class="text-sm font-bold">Home</h1>
+                          <div
+                            class="flex items-center justify-center size-8 text-xs bg-transparent text-darkGray cursor-pointer"
+                          >
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                          <h1 class="text-sm font-bold">About</h1>
+                        </div>
+                        <!-- shop -->
+                        <div
+                          id="shopItemContainer"
+                          class="py-2 overflow-hidden h-10 transition-all duration-500"
+                        >
+                          <div class="flex justify-between">
+                            <h1 class="text-sm font-bold">Shop</h1>
+                            <div
+                              id="expandBtn"
+                              class="flex items-center justify-center size-8 text-xs bg-transparent text-darkGray"
+                            >
+                              <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                          </div>
+                          <div class="border p-5">
+                            <!-- product style -->
+                            <div class="mb-6">
+                              <h1 class="font-bold text-primary text-xl mb-4">
+                                Product Style
+                              </h1>
+                              <div class="flex flex-col gap-3">
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- product style single -->
+                            <div class="mb-6">
+                              <h1 class="font-bold text-primary text-xl mb-4">
+                                Product Style Single
+                              </h1>
+                              <div class="flex flex-col gap-3">
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                                <a href="">
+                                  <p class="font-semibold text-sm">
+                                    Product Style One
+                                  </p>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                          <h1 class="text-sm font-bold">Home</h1>
+                          <div
+                            class="flex items-center justify-center size-8 active:text-white text-xs bg-transparent text-darkGray active:bg-primary"
+                          >
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- category options -->
+                      <div
+                        id="categoryList"
+                        class="divide-y flex flex-col hidden"
+                      >
+                        <a class="py-3 text-sm font-bold" href="">Hello</a>
+                        <a class="py-3 text-sm font-bold" href="">Hello</a>
+                        <a class="py-3 text-sm font-bold" href="">Hello</a>
+                        <a class="py-3 text-sm font-bold" href="">Hello</a>
+                        <a class="py-3 text-sm font-bold" href="">Hello</a>
+                      </div>
+
+                      <!-- login signup -->
+                      <div class="border mt-6 py-6 px-5">
+                        <div class="flex items-center gap-2 mb-5">
+                          <i
+                            class="fa-solid fa-headphones text-sm text-primary"
+                          ></i>
+                          <p class="text-darkGreen">98086765545</p>
+                        </div>
+                        <div class="flex items-center gap-2 mb-5">
+                          <i
+                            class="fa-solid fa-envelope text-sm text-primary"
+                          ></i>
+                          <p class="text-darkGreen">exmple@gamil.com</p>
+                        </div>
+                        <a
+                          class="w-full text-center bg-amber py-2 block text-white rounded mb-3"
+                          href=""
+                          >Sign Up</a
+                        >
+                        <a
+                          class="w-full text-center bg-primary py-2 block text-white rounded mb-3 hover:bg-amber transition-all duration-300"
+                          href=""
+                          >Login</a
+                        >
+                      </div>
+                      <!-- social links -->
+                      <div class="flex items-center gap-2 mt-10">
+                        <a
+                          href="#"
+                          class="flex items-center justify-center size-8 rounded-full bg-primary text-white hover:-translate-y-1 transition-all duration-300"
+                        >
+                          <i class="fa-brands fa-facebook text-sm"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="flex items-center justify-center size-8 rounded-full bg-primary text-white hover:-translate-y-1 transition-all duration-300"
+                        >
+                          <i class="fa-brands fa-twitter text-sm"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="flex items-center justify-center size-8 rounded-full bg-primary text-white hover:-translate-y-1 transition-all duration-300"
+                        >
+                          <i class="fa-brands fa-skype text-sm"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="flex items-center justify-center size-8 rounded-full bg-primary text-white hover:-translate-y-1 transition-all duration-300"
+                        >
+                          <i class="fa-brands fa-youtube text-sm"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="flex items-center justify-center size-8 rounded-full bg-primary text-white hover:-translate-y-1 transition-all duration-300"
+                        >
+                          <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                      </div>
+                      <p class="text-sm mt-16 mb-6">
+                        Copyright 2022 © Nest. All rights reserved.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- nav items -->
+            <div class="hidden items-center gap-8 xl:flex">
+              <button
+                class="border border-primary rounded p-2 text-primary whitespace-nowrap hover:-translate-y-2 transition-all duration-300"
+              >
+                Became Vendor
+                <span> <i class="fa-solid fa-arrow-right"></i></span>
+              </button>
+              <div class="flex items-center gap-6">
+                <!-- compare -->
+                <div class="relative">
+                  <div class="flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-recycle text-2xl"></i>
+                    <p class="text-darkGray">Compare</p>
+                  </div>
+                  <div
+                    class="absolute -top-7 left-5 flex items-center justify-center bg-primary text-white text-sm rounded-full size-5"
+                  >
+                    <span>0</span>
+                  </div>
+                </div>
+                <!-- wishlist -->
+                <div class="relative">
+                  <div class="flex items-center gap-2 cursor-pointer">
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <p class="text-darkGray">Wishlist</p>
+                  </div>
+                  <div
+                    class="absolute -top-7 left-5 flex items-center justify-center bg-primary text-white text-sm rounded-full size-5"
+                  >
+                    <span>0</span>
+                  </div>
+                </div>
+                <!-- cart -->
+                <div class="relative">
+                  <div class="relative flex items-center gap-2 group">
+                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                    <p class="text-darkGray">Cart</p>
+                    <div
+                      class="bg-white absolute top-10 right-0 border border-gray-200 w-[500px] shadow-sm rounded-lg translate-y-7 opacity-0 group-hover:translate-y-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-50"
+                    >
+                      <p class="text-center text-darkGray">
+                        No product in the cart
+                      </p>
+                      <div class="space-y-4 pt-7 pb-5 border-b px-5">
+                        <div class="flex items-center gap-7">
+                          <img
+                            class="size-20 border"
+                            src="/images/product-2-1.jpg"
+                            alt="product"
+                          />
+
+                          <div>
+                            <h1 class="font-bold text-center">
+                              Foster Farms Takeout Crispy Classic
+                            </h1>
+                            <p>1 x $16</p>
+                          </div>
+
+                          <div
+                            class="flex items-center justify-center bg-transparent text-primary group size-7 rounded-full cursor-pointer border"
+                          >
+                            <i
+                              class="fa-solid fa-x text-xs group-hover:rotate-180 transition-all duration-300"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-7">
+                          <img
+                            class="size-20 border"
+                            src="/images/product-2-1.jpg"
+                            alt="product"
+                          />
+
+                          <div>
+                            <h1 class="font-bold text-center">
+                              Foster Farms Takeout Crispy Classic
+                            </h1>
+                            <p>1 x $16</p>
+                          </div>
+
+                          <div
+                            class="flex items-center justify-center bg-transparent text-primary group size-7 rounded-full cursor-pointer border"
+                          >
+                            <i
+                              class="fa-solid fa-x text-xs group-hover:rotate-180 transition-all duration-300"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-5">
+                        <h1 class="text-darkGray">
+                          SubTotal: <span class="text-primary">$38.90</span>
+                        </h1>
+                        <div
+                          class="flex items-center justify-between gap-3 mt-7"
+                        >
+                          <a
+                            class="py-2 px-5 bg-primary hover:bg-amber transition-all duration-300 text-white rounded-md"
+                            href=""
+                            >View Cart</a
+                          >
+                          <a
+                            class="py-2 px-5 bg-primary hover:bg-amber transition-all duration-300 text-white rounded-md"
+                            href=""
+                            >Checkout</a
+                          >
+                          <a
+                            class="py-2 px-5 bg-primary hover:bg-amber transition-all duration-300 text-white rounded-md"
+                            href=""
+                            >Empty Cart</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute -top-7 left-5 flex items-center justify-center bg-primary text-white text-sm rounded-full size-5"
+                  >
+                    <span>0</span>
+                  </div>
+                </div>
+                <!-- account -->
+                <div class="relative">
+                  <div
+                    class="relative flex items-center gap-2 cursor-pointer group"
+                  >
+                    <i class="fa-solid fa-user text-2xl"></i>
+                    <p class="text-darkGray">Account</p>
+                    <div
+                      class="bg-white absolute top-10 right-0 p-5 border border-gray-200 w-[100px] shadow-sm rounded-lg translate-y-7 opacity-0 group-hover:translate-y-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <a
+                        class="text-black hover:text-primary transition-colors duration-300"
+                        href="#"
+                        >Login</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mobile search bar -->
+          <div
+            class="flex xl:hidden items-center justify-between w-full border border-primary py-1 pl-5 pr-1 rounded gap-5 mt-5 relative"
+          >
+            <input class="w-full outline-none peer" type="text" />
+            <button
+              class="bg-primary text-white font-bold px-5 py-2 rounded hover:bg-amber transition-colors duration-500"
+            >
+              Search
+            </button>
+            <div
+              class="absolute left-0 right-0 top-14 bg-white border border-lightGray rounded p-5 z-50 transition-all duration-300 -translate-y-11 opacity-0 invisible peer-focus:translate-y-0 peer-focus:opacity-100 peer-focus:visible"
+            >
+              <p class="hidden">No Result</p>
+              <div class="flex items-center gap-3">
+                <img
+                  class="size-7 rounded"
+                  src="/images/cat-1.png"
+                  alt="product image"
+                />
+                <a href=""
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header center end -->
+
+        <!-- header bottom start -->
+        <div
+          class="hidden xl:flex items-center gap-7 mt-5 pb-10 border-b border-gray-200 relative"
+        >
+          <button
+            id="categoryBtn"
+            class="flex items-center gap-2 rounded-md py-2 px-7 bg-primary text-white hover:bg-darkPrimary transition-colors duration-300 whitespace-nowrap"
+          >
+            <i class="fa-solid fa-border-all"></i>
+            <h1>Browse all categories</h1>
+            <i class="fa-solid fa-angle-down text-xs"></i>
+          </button>
+
+          <!-- categories -->
+          <div
+            id="categories"
+            class="absolute top-12 rounded-md w-[500px] bg-white border border-gray-200 py-5 px-7 z-40 grid grid-cols-2 gap-3 hidden"
+          >
+            <div
+              class="border border-gray-200 hover:border-primary transition-all duration-300 py-3 px-5 rounded flex items-center gap-3 relative overflow-hidden"
+            >
+              <img class="size-9" src="/images/icon-1.png" alt="icon" />
+              <a
+                href=""
+                class="font-bold text-darkGreen hover:text-primary transition-all duration-300"
+              >
+                Wines & Drinks</a
+              >
+              <div
+                class="absolute top-0 right-0 bg-primary size-5 text-white text-sm flex items-center justify-center rounded-l-md rounded-t-none"
+              >
+                <span>0</span>
+              </div>
+            </div>
+            <div
+              class="border border-gray-200 hover:border-primary transition-all duration-300 py-3 px-5 rounded flex items-center gap-3 relative overflow-hidden"
+            >
+              <img class="size-9" src="/images/icon-2.png" alt="icon" />
+              <a
+                href=""
+                class="font-bold text-darkGreen hover:text-primary transition-all duration-300"
+              >
+                Wines & Drinks</a
+              >
+              <div
+                class="absolute top-0 right-0 bg-primary size-5 text-white text-sm flex items-center justify-center rounded-l-md rounded-t-none"
+              >
+                <span>0</span>
+              </div>
+            </div>
+            <div
+              class="border border-gray-200 hover:border-primary transition-all duration-300 py-3 px-5 rounded flex items-center gap-3 relative overflow-hidden"
+            >
+              <img class="size-9" src="/images/icon-3.png" alt="icon" />
+              <a
+                href=""
+                class="font-bold text-darkGreen hover:text-primary transition-all duration-300"
+              >
+                Wines & Drinks</a
+              >
+              <div
+                class="absolute top-0 right-0 bg-primary size-5 text-white text-sm flex items-center justify-center rounded-l-md rounded-t-none"
+              >
+                <span>0</span>
+              </div>
+            </div>
+            <div
+              class="border border-gray-200 hover:border-primary transition-all duration-300 py-3 px-5 rounded flex items-center gap-3 relative overflow-hidden"
+            >
+              <img class="size-9" src="/images/icon-4.png" alt="icon" />
+              <a
+                href=""
+                class="font-bold text-darkGreen hover:text-primary transition-all duration-300"
+              >
+                Wines & Drinks</a
+              >
+              <div
+                class="absolute top-0 right-0 bg-primary size-5 text-white text-sm flex items-center justify-center rounded-l-md rounded-t-none"
+              >
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- links -->
+          <ul class="flex items-center gap-8 whitespace-nowrap text-black">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-fire text-primary"></i>
+              <a
+                class="quicksand text-darkGreen font-bold hover:text-primary transition-colors duration-300"
+                href=""
+                >Hot Deals</a
+              >
+            </li>
+            <li class="relative group">
+              <div
+                class="flex items-center gap-3 cursor-pointer text-darkGreen active:text-primary hover:text-primary transition-colors duration-300"
+              >
+                <h1 class="quicksand font-bold">Home</h1>
+                <i class="fa-solid fa-angle-down text-xs"></i>
+              </div>
+              <div
+                class="absolute left-0 top-12 w-[300px] rounded-xl border border-gray-200 p-7 space-y-3 font-bold bg-white z-40 hover-animation"
+              >
+                <p class="cursor-pointer">Home 1</p>
+                <p class="cursor-pointer">Home 1</p>
+                <p class="cursor-pointer">Home 1</p>
+              </div>
+            </li>
+            <li>
+              <a
+                class="text-darkGreen font-bold hover:text-primary transition-colors duration-300 active:text-primary"
+                href=""
+                >About</a
+              >
+            </li>
+            <li class="group">
+              <div
+                class="flex items-center gap-3 cursor-pointer text-darkGreen active:text-primary hover:text-primary transition-colors duration-300"
+              >
+                <h1 class="quicksand font-bold">Shop</h1>
+                <i class="fa-solid fa-angle-down text-xs"></i>
+              </div>
+              <div
+                class="absolute left-0 right-5 top-12 w-full rounded-md border border-gray-200 p-7 space-y-3 font-bold bg-white z-40 grid grid-cols-4 gap-5 hover-animation"
+              >
+                <!-- product style -->
+                <div class="">
+                  <h1 class="font-bold text-xl text-primary mb-6">
+                    Product Style
+                  </h1>
+                  <div class="flex flex-col gap-4">
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style one</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style two</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style three</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style four</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style five</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style six</a
+                    >
+                  </div>
+                </div>
+                <!-- single product style -->
+                <div class="">
+                  <div class="mb-6">
+                    <h1 class="font-bold text-xl text-primary mb-6">
+                      Product Single Style
+                    </h1>
+                    <div class="flex flex-col gap-4">
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style one</a
+                      >
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style two</a
+                      >
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style three</a
+                      >
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style four</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mb-6">
+                    <h1 class="font-bold text-xl text-primary mb-6">
+                      Product Single Features
+                    </h1>
+                    <div class="flex flex-col gap-4">
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style one</a
+                      >
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style two</a
+                      >
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style three</a
+                      >
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Product style four</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- product type -->
+                <div class="">
+                  <h1 class="font-bold text-xl text-primary mb-6">
+                    Product Type
+                  </h1>
+                  <div class="flex flex-col gap-4">
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style one</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style two</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style three</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style four</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style five</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Product style six</a
+                    >
+                  </div>
+                </div>
+                <div class="relative">
+                  <img
+                    class="h-full object-cover rounded-md"
+                    src="/images/banner-14.png"
+                    alt=""
+                  />
+                  <div class="absolute top-0 p-10">
+                    <h1 class="font-bold text-lg text-primary">Organic</h1>
+                    <p class="font-bold text-2xl text-darkGreen mt-3">
+                      Everyday Fresh & Clean with our Products
+                    </p>
+                    <button
+                      class="py-1 px-6 rounded bg-primary text-white font-bold mt-10"
+                    >
+                      Shop noe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <div
+                class="flex items-center gap-3 cursor-pointer text-darkGreen hover:text-primary transition-colors duration-300 active:text-primary"
+              >
+                <h1
+                  class="quicksand font-bold hover:text-primary transition-colors duration-300"
+                >
+                  Vendor
+                </h1>
+                <i class="fa-solid fa-angle-down text-xs"></i>
+              </div>
+              <div
+                class="absolute left-0 top-12 w-[300px] rounded-xl border border-gray-200 p-7 space-y-3 font-bold bg-white z-40 hover-animation"
+              >
+                <p class="cursor-pointer">Dashboard</p>
+                <p class="cursor-pointer">Store listing</p>
+                <p class="cursor-pointer">Store Details</p>
+                <p class="cursor-pointer">My Orders</p>
+              </div>
+            </li>
+            <li class="group">
+              <div
+                class="flex items-center gap-3 cursor-pointer text-darkGreen hover:text-primary transition-colors duration-300 active:text-primary"
+              >
+                <h1
+                  class="quicksand font-bold hover:text-primary transition-colors duration-300"
+                >
+                  Mega Menu
+                </h1>
+                <i class="fa-solid fa-angle-down text-xs"></i>
+              </div>
+              <div
+                class="absolute left-0 right-5 top-12 w-full rounded-md border border-gray-200 p-7 space-y-3 font-bold bg-white z-40 grid grid-cols-4 gap-10 hover-animation"
+              >
+                <!-- product style -->
+                <div class="">
+                  <h1 class="font-bold text-xl text-primary mb-6">
+                    Products 10% Discount
+                  </h1>
+                  <div class="flex flex-col gap-4">
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Canada Dry Ginger Ale – 2 L Bottle
+                    </a>
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Cauliflower Species Brassica the genus
+                    </a>
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Nestle Original Mate Coffee Creamer</a
+                    >
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Onion hybrid varieties genus Allium
+                    </a>
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Seed of Change Organic Rice</a
+                    >
+                  </div>
+                </div>
+                <!-- single product style -->
+                <div class="">
+                  <div class="mb-6">
+                    <h1 class="font-bold text-xl text-primary mb-6">
+                      Products 20% Discount
+                    </h1>
+                    <div class="flex flex-col gap-4">
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >All Natural Style Chicken Meatballs
+                      </a>
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Angie’s Sweet & Salty Kettle Corn staple
+                      </a>
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Blue Almonds Lightly Salted Vegetables
+                      </a>
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Butter fat and protein churned cream
+                      </a>
+                      <a class="text-darkGray font-bold text-[15px]" href=""
+                        >Butter fat and protein churned cream
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- product type -->
+                <div class="">
+                  <h1 class="font-bold text-xl text-primary mb-6">
+                    Products 30% Discount
+                  </h1>
+                  <div class="flex flex-col gap-4">
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Collared Nikky Printed Men Neck T-Shirt
+                    </a>
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Crabs are decapod crustaceans fraorder
+                    </a>
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Encore Seafoods Stuffed the occasional
+                    </a>
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Foster Farms Takeout Crispy Classic
+                    </a>
+                    <a class="text-darkGray font-bold text-[15px]" href=""
+                      >Fresh mango smoothies with a Blender
+                    </a>
+                  </div>
+                </div>
+                <div class="relative h-[250px]">
+                  <img
+                    class="h-full object-cover rounded-md"
+                    src="/images/banner-1.png"
+                    alt=""
+                  />
+                  <div class="absolute top-0 p-3">
+                    <h1 class="font-bold text-lg text-primary">Organic</h1>
+                    <p class="font-bold text-2xl text-darkGreen mt-3">
+                      Everyday Fresh & Clean with our Products
+                    </p>
+                    <button
+                      class="py-1 px-6 rounded bg-primary text-white font-bold mt-10"
+                    >
+                      Shop noe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- blogs -->
+            <li class="relative group">
+              <div
+                class="flex items-center gap-3 cursor-pointer text-darkGreen active:text-primary hover:text-primary transition-colors duration-300"
+              >
+                <h1
+                  class="quicksand font-bold hover:text-primary transition-colors duration-300"
+                >
+                  Blog
+                </h1>
+                <i class="fa-solid fa-angle-down text-xs"></i>
+              </div>
+              <div
+                class="absolute right-0 top-12 w-[300px] rounded-xl border border-gray-200 p-7 space-y-3 font-bold bg-white z-40 hover-animation"
+              >
+                <p class="cursor-pointer">Blog Default</p>
+                <p class="cursor-pointer">Blog Grid</p>
+                <p class="cursor-pointer">Blog List</p>
+                <p class="cursor-pointer">Blog Big</p>
+                <div
+                  class="cursor-pointer flex items-center justify-between relative group/blogs"
+                >
+                  <p>Single Blog</p>
+                  <i class="fa-solid fa-angle-down text-xs"></i>
+                  <div
+                    class="hover-animation-blogs absolute bg-white top-10 -right-20 rounded z-30 w-[250px] p-5 border space-y-3"
+                  >
+                    <p>With Rice</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="relative group">
+              <div
+                class="flex items-center gap-3 cursor-pointer text-darkGreen active:text-primary hover:text-primary transition-colors duration-300"
+              >
+                <h1
+                  class="quicksand font-bold hover:text-primary transition-colors duration-300"
+                >
+                  Pages
+                </h1>
+                <i class="fa-solid fa-angle-down text-xs"></i>
+              </div>
+              <div
+                class="absolute right-0 top-12 w-[300px] rounded-xl border border-gray-200 p-7 space-y-3 font-bold bg-white z-40 hover-animation"
+              >
+                <p class="cursor-pointer">Home 1</p>
+                <p class="cursor-pointer">Home 1</p>
+                <p class="cursor-pointer">Home 1</p>
+              </div>
+            </li>
+            <li class="cursor-pointer">
+              <h1
+                class="quicksand font-bold hover:text-primary transition-colors duration-300"
+              >
+                Contact
+              </h1>
+            </li>
+          </ul>
+        </div>
+        <!-- header bottom end -->
+      </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- hero section start -->
+    <section class="mt-8 sm:mt-16">
+      <div class="container relative h-[300px] sm:h-[538px]">
+        <!-- slide 1 -->
+        <div class="h-full group hidden">
+          <img
+            class="w-full h-full rounded-[44px] object-cover absolute inset-0 px-5"
+            src="/images/slider.png"
+            alt="slider image"
+          />
+          <div class="absolute left-10 top-10 sm:left-28 sm:top-28 z-50">
+            <h1
+              class="text-darkGreen text-2xl sm:text-5xl lg:text-6xl font-bold"
+            >
+              Don't miss amazing <br />
+              grocery deals
+            </h1>
+            <p class="text-lg sm:text-2xl lg:text-3xl my-5 sm:my-10">
+              Save Up to 50% off on your first order
+            </p>
+            <div
+              class="flex items-center gap-4 justify-between bg-white rounded-[44px] mr-5"
+            >
+              <input
+                class="w-full outline-none border-none rounded-[44px] py-2 px-5 sm:py-5 sm:px-6"
+                type="text"
+              />
+              <button
+                class="py-2 px-5 sm:py-5 sm:px-6 rounded-[44px] text-white bg-primary block"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <!-- navigation left -->
+          <button
+            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] left-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+          >
+            <i
+              class="fa-solid fa-chevron-left text-darkGray text-sm sm:text-2xl"
+            ></i>
+          </button>
+
+          <!-- navigation right -->
+          <button
+            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] right-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+          >
+            <i
+              class="fa-solid fa-chevron-right text-darkGray text-sm sm:text-2xl"
+            ></i>
+          </button>
+        </div>
+        <!-- slide 2 -->
+
+        <div class="h-full group">
+          <img
+            class="w-full h-full rounded-[44px] object-cover absolute inset-0 px-5"
+            src="/images/slider-2-min.png"
+            alt="slider image"
+          />
+          <div class="absolute left-10 top-10 sm:left-28 sm:top-28 z-50">
+            <h1
+              class="text-darkGreen text-2xl sm:text-5xl lg:text-6xl font-bold"
+            >
+              Don't miss amazing <br />
+              grocery deals
+            </h1>
+            <p class="text-lg sm:text-2xl lg:text-3xl my-5 sm:my-10">
+              Save Up to 50% off on your first order
+            </p>
+            <div
+              class="flex items-center gap-4 justify-between bg-white rounded-[44px] mr-5"
+            >
+              <input
+                class="w-full outline-none border-none rounded-[44px] py-2 px-5 sm:py-5 sm:px-6"
+                type="text"
+              />
+              <button
+                class="py-2 px-5 sm:py-5 sm:px-6 rounded-[44px] text-white bg-primary block"
+              >
+                Subscribe
+              </button>
+            </div>
+            <!-- <button
+              class="py-2 px-5 lg:py-5 lg:px-6 rounded-[44px] text-white bg-primary mt-3 hidden sm:block"
+            >
+              Subscribe
+            </button> -->
+          </div>
+
+          <!-- navigation left -->
+          <button
+            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] left-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+          >
+            <i
+              class="fa-solid fa-chevron-left text-darkGray text-sm sm:text-2xl"
+            ></i>
+          </button>
+
+          <!-- navigation right -->
+          <button
+            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] right-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+          >
+            <i
+              class="fa-solid fa-chevron-right text-darkGray text-sm sm:text-2xl"
+            ></i>
+          </button>
+        </div>
+
+        <!-- pagination buttons -->
+        <div class="flex justify-center items-center gap-3 relative bottom-10">
+          <button
+            class="size-4 rounded-full bg-darkPrimary border border-darkPrimary"
+          ></button>
+          <button
+            class="size-4 rounded-full bg-transparent border border-black"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- featured category section start -->
+    <section class="my-20">
+      <div class="container">
+        <div class="flex flex-wrap gap-3 items-center justify-between">
+          <h1 class="text-darkGreen font-bold text-3xl quicksand">
+            Featured Category
+          </h1>
+
+          <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
+            <li>
+              <a class="text-darkGreen font-medium" href="">Cake and Milk</a>
+            </li>
+            <li>
+              <a class="text-darkGreen font-medium" href="">Coffee and Teas</a>
+            </li>
+            <li>
+              <a class="text-darkGreen font-medium" href="">Pet foods</a>
+            </li>
+            <li>
+              <a class="text-darkGreen font-medium" href="">Vegetables</a>
+            </li>
+          </ul>
+        </div>
+        <!-- category items -->
+        <div class="swiper mySwiper categoryCardSlider mt-7 group">
+          <div
+            class="swiper-wrapper grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-10"
+          >
+            <!-- slides start -->
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream1 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-1.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream2 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-2.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream3 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-3.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream4 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-4.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream5 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-5.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream1 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-1.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream2 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-2.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream3 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-3.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream4 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-4.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream5 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-5.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream1 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-1.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream2 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-2.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex items-center justify-center flex-col bg-cream3 hover:border border border-transparent hover:border-primary transition-all duration-300 rounded-xl pt-8 pb-5 px-2"
+              >
+                <img
+                  class="size-20 hover:scale-105 transition-all duration-300"
+                  src="/images/cat-3.png"
+                  alt=""
+                />
+                <h1 class="font-medium mt-6">Cake & Milk</h1>
+                <p>11 items</p>
+              </div>
+            </div>
+            <!-- slides end -->
+          </div>
+          <!-- navigation -->
+          <div class="flex items-center gap-2 relative">
+            <div
+              class="swiper-button-prev relative transition-all duration-300 invisible opacity-0 group-hover:opacity-100 group-hover:visible"
+              style="margin-top: 30px"
+            >
+              <button
+                class="flex items-center justify-center size-10 rounded-full bg-lightGray text-darkGray hover:bg-primary hover:text-white transition-all duration-300 absolute bottom-[170px] left-2"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+            <div
+              class="swiper-button-next relative transition-all duration-300 invisible opacity-0 group-hover:opacity-100 group-hover:visible"
+              style="margin-top: 30px"
+            >
+              <button
+                class="flex items-center justify-center size-10 rounded-full bg-lightGray text-darkGray hover:bg-primary hover:text-white transition-all duration-300 absolute bottom-[170px] right-2"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- suggested category -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 group">
+          <div
+            class="rounded-xl relative w-full p-14 bg-cover bg-center bg-no-repeat bg-[url('/images/banner-1.png')] mt-12 transition-all duration-300 hover:saturate-150"
+          >
+            <h1 class="text-2xl text-darkGreen font-bold font-quicksand">
+              Everyday Clean & <br />
+              Fresh With our <br />
+              Products
+            </h1>
+            <button
+              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white mt-7 hover:bg-amber transition-all duration-500"
+            >
+              Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div
+            class="rounded-xl relative w-full p-14 bg-cover bg-center bg-no-repeat bg-[url('/images/banner-2.png')] mt-12 transition-all duration-300 hover:saturate-150"
+          >
+            <h1 class="text-2xl text-darkGreen font-bold font-quicksand">
+              Make your Breakfast Healthy & Easy
+            </h1>
+            <button
+              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white hover:bg-amber transition-all duration-500 mt-7"
+            >
+              Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div
+            class="rounded-xl w-full p-14 bg-cover bg-center bg-no-repeat bg-[url('/images/banner-3.png')] mt-12 relative transition-all duration-300 hover:saturate-150"
+          >
+            <h1 class="text-2xl text-darkGreen font-bold font-quicksand">
+              The Best Organic Products Online
+            </h1>
+            <button
+              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white hover:bg-amber transition-all duration-500 mt-7"
+            >
+              Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured category section end -->
+
+    <!-- products section start -->
+    <section class="mb-20">
+      <div class="container">
+        <!-- filter by categories -->
+        <div class="flex items-center flex-wrap gap-5 justify-between">
+          <h1 class="text-darkGreen font-bold text-3xl quicksand">
+            Popular Products
+          </h1>
+          <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a class="font-medium font-quicksand text-primary" href="">All</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Booking Material</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Fresh Fruits</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Milk & Dairies</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Meats</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Vegetables</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- products -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid xl:grid-cols-4 gap-5"
+        >
+          <!-- single product -->
+          <div
+            class="mt-10 rounded-3xl overflow-hidden border border-lightGray transition-all duration-300 hover:border-primary"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+              >
+                13%
+              </div>
+
+              <div
+                class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+              >
+                New
+              </div>
+            </div>
+            <!-- product image -->
+            <div
+              class="flex items-center justify-center w-full group/product relative"
+            >
+              <img
+                class="h-[195px] block w-[185px] group-hover/product:hidden"
+                src="/images/product-2-1.jpg"
+                alt="product image"
+              />
+              <img
+                class="h-[195px] hidden w-[185px] group-hover/product:block"
+                src="/images/product-4-2.jpg"
+                alt="product image"
+              />
+
+              <!-- product options  -->
+              <div
+                class="flex items-center min-w-24 rounded border border-primary absolute bg-white z-50 translate-y-7 opacity-0 invisible group-hover/product:translate-y-0 group-hover/product:visible group-hover/product:opacity-100 transition-all duration-300"
+              >
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      quick view
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      compare
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="p-y px-3 relative group">
+                  <button>
+                    <i
+                      class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      Wishlist
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product details -->
+            <div class="px-4 mb-7">
+              <span
+                class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                >Baking Material</span
+              >
+              <h1
+                class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+              >
+                Foster Farms Takeout Crispy Classic
+              </h1>
+              <!-- ratings -->
+              <div class="flex items-center gap-2 mb-2">
+                <div class="flex items-center text-sm text-darkGray">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="text-darkGray text-sm">0</span>
+              </div>
+              <p class="text-darkGray font-normal mb-3">
+                By <span class="text-primary">Country Cork</span>
+              </p>
+              <!-- price -->
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <h1 class="text-primary text-lg underline">$17.85</h1>
+                  <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                </div>
+                <button
+                  class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                >
+                  <p class="text-sm text-darkPrimary font-medium">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- single product -->
+          <div
+            class="mt-10 rounded-3xl overflow-hidden border border-lightGray transition-all duration-300 hover:border-primary"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+              >
+                13%
+              </div>
+
+              <div
+                class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+              >
+                New
+              </div>
+            </div>
+            <!-- product image -->
+            <div
+              class="flex items-center justify-center w-full group/product relative"
+            >
+              <img
+                class="h-[195px] block w-[185px] group-hover/product:hidden"
+                src="/images/product-2-1.jpg"
+                alt="product image"
+              />
+              <img
+                class="h-[195px] hidden w-[185px] group-hover/product:block"
+                src="/images/product-4-2.jpg"
+                alt="product image"
+              />
+
+              <!-- product options  -->
+              <div
+                class="flex items-center min-w-24 rounded border border-primary absolute bg-white z-50 translate-y-7 opacity-0 invisible group-hover/product:translate-y-0 group-hover/product:visible group-hover/product:opacity-100 transition-all duration-300"
+              >
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      quick view
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      compare
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="p-y px-3 relative group">
+                  <button>
+                    <i
+                      class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      Wishlist
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product details -->
+            <div class="px-4 mb-7">
+              <span
+                class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                >Baking Material</span
+              >
+              <h1
+                class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+              >
+                Foster Farms Takeout Crispy Classic
+              </h1>
+              <!-- ratings -->
+              <div class="flex items-center gap-2 mb-2">
+                <div class="flex items-center text-sm text-darkGray">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="text-darkGray text-sm">0</span>
+              </div>
+              <p class="text-darkGray font-normal mb-3">
+                By <span class="text-primary">Country Cork</span>
+              </p>
+              <!-- price -->
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <h1 class="text-primary text-lg underline">$17.85</h1>
+                  <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                </div>
+                <button
+                  class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                >
+                  <p class="text-sm text-darkPrimary font-medium">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- single product -->
+          <div
+            class="mt-10 rounded-3xl overflow-hidden border border-lightGray transition-all duration-300 hover:border-primary"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+              >
+                13%
+              </div>
+
+              <div
+                class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+              >
+                New
+              </div>
+            </div>
+            <!-- product image -->
+            <div
+              class="flex items-center justify-center w-full group/product relative"
+            >
+              <img
+                class="h-[195px] block w-[185px] group-hover/product:hidden"
+                src="/images/product-2-1.jpg"
+                alt="product image"
+              />
+              <img
+                class="h-[195px] hidden w-[185px] group-hover/product:block"
+                src="/images/product-4-2.jpg"
+                alt="product image"
+              />
+
+              <!-- product options  -->
+              <div
+                class="flex items-center min-w-24 rounded border border-primary absolute bg-white z-50 translate-y-7 opacity-0 invisible group-hover/product:translate-y-0 group-hover/product:visible group-hover/product:opacity-100 transition-all duration-300"
+              >
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      quick view
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      compare
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="p-y px-3 relative group">
+                  <button>
+                    <i
+                      class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      Wishlist
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product details -->
+            <div class="px-4 mb-7">
+              <span
+                class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                >Baking Material</span
+              >
+              <h1
+                class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+              >
+                Foster Farms Takeout Crispy Classic
+              </h1>
+              <!-- ratings -->
+              <div class="flex items-center gap-2 mb-2">
+                <div class="flex items-center text-sm text-darkGray">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="text-darkGray text-sm">0</span>
+              </div>
+              <p class="text-darkGray font-normal mb-3">
+                By <span class="text-primary">Country Cork</span>
+              </p>
+              <!-- price -->
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <h1 class="text-primary text-lg underline">$17.85</h1>
+                  <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                </div>
+                <button
+                  class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                >
+                  <p class="text-sm text-darkPrimary font-medium">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- single product -->
+          <div
+            class="mt-10 rounded-3xl overflow-hidden border border-lightGray transition-all duration-300 hover:border-primary"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+              >
+                13%
+              </div>
+
+              <div
+                class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+              >
+                New
+              </div>
+            </div>
+            <!-- product image -->
+            <div
+              class="flex items-center justify-center w-full group/product relative"
+            >
+              <img
+                class="h-[195px] block w-[185px] group-hover/product:hidden"
+                src="/images/product-2-1.jpg"
+                alt="product image"
+              />
+              <img
+                class="h-[195px] hidden w-[185px] group-hover/product:block"
+                src="/images/product-4-2.jpg"
+                alt="product image"
+              />
+
+              <!-- product options  -->
+              <div
+                class="flex items-center min-w-24 rounded border border-primary absolute bg-white z-50 translate-y-7 opacity-0 invisible group-hover/product:translate-y-0 group-hover/product:visible group-hover/product:opacity-100 transition-all duration-300"
+              >
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      quick view
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="py-2 px-3 border-r border-primary relative group">
+                  <button>
+                    <i
+                      class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      compare
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+                <div class="p-y px-3 relative group">
+                  <button>
+                    <i
+                      class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                  >
+                    <p
+                      class="whitespace-nowrap px-2 text-sm text-center text-white"
+                    >
+                      Wishlist
+                    </p>
+                    <div
+                      class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- product details -->
+            <div class="px-4 mb-7">
+              <span
+                class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                >Baking Material</span
+              >
+              <h1
+                class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+              >
+                Foster Farms Takeout Crispy Classic
+              </h1>
+              <!-- ratings -->
+              <div class="flex items-center gap-2 mb-2">
+                <div class="flex items-center text-sm text-darkGray">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="text-darkGray text-sm">0</span>
+              </div>
+              <p class="text-darkGray font-normal mb-3">
+                By <span class="text-primary">Country Cork</span>
+              </p>
+              <!-- price -->
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <h1 class="text-primary text-lg underline">$17.85</h1>
+                  <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                </div>
+                <button
+                  class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                >
+                  <p class="text-sm text-darkPrimary font-medium">Add</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products section end -->
+
+    <!-- best sells section start -->
+    <section class="mb-20">
+      <div class="container">
+        <!-- filter options -->
+        <div class="flex flex-wrap gap-5 items-center justify-between">
+          <h1 class="text-darkGreen font-bold text-3xl quicksand">
+            Daily Best Sells
+          </h1>
+          <!-- links -->
+          <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a class="font-medium font-quicksand text-primary" href="">All</a>
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Booking Material</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Fresh Fruits</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Milk & Dairies</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Meats</a
+              >
+            </li>
+            <li class="hover:-translate-y-1 transition-all duration-300">
+              <a
+                class="text-darkGreen font-medium font-quicksand hover:text-primary"
+                href=""
+                >Vegetables</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-6 mt-6">
+          <div
+            class="rounded-2xl bg-[url('/images/banner-7-min.png')] w-[26%] p-10 h-full hidden xl:block"
+          >
+            <h1 class="text-darkGreen text-4xl mb-20">
+              Bring nature into your home
+            </h1>
+            <button
+              class="flex items-center py-1 px-3 bg-darkPrimary rounded mb-20"
+            >
+              <p class="text-white text-sm">Shop now</p>
+            </button>
+          </div>
+          <!-- slider start -->
+          <div class="swiper mySwiper bestSellsSlider relative">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 swiper-wrapper"
+            >
+              <!-- single product -->
+              <div class="swiper-slide">
+                <div
+                  class="rounded-3xl overflow-hidden border border-lightGray hover:border-primary transition-all duration-300"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+                    >
+                      13%
+                    </div>
+
+                    <div
+                      class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+                    >
+                      New
+                    </div>
+                  </div>
+                  <!-- product image -->
+                  <div
+                    class="flex items-center justify-center w-full group/product relative"
+                  >
+                    <img
+                      class="h-[195px] block w-[185px] group-hover/product:hidden"
+                      src="/images/product-2-1.jpg"
+                      alt="product image"
+                    />
+                    <img
+                      class="h-[195px] hidden w-[185px] group-hover/product:block"
+                      src="/images/product-4-2.jpg"
+                      alt="product image"
+                    />
+
+                    <!-- product options  -->
+                    <div class="product-options">
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            quick view
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            compare
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="p-y px-3 relative group">
+                        <button>
+                          <i
+                            class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            Wishlist
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- product details -->
+                  <div class="px-5 mb-7">
+                    <span
+                      class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                      >Baking Material</span
+                    >
+                    <h1
+                      class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+                    >
+                      Foster Farms Takeout Crispy Classic
+                    </h1>
+                    <!-- ratings -->
+                    <div class="flex items-center gap-2 mb-2">
+                      <div class="flex items-center text-sm text-darkGray">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <span class="text-darkGray text-sm">0</span>
+                    </div>
+                    <p class="text-darkGray font-normal mb-3">
+                      By <span class="text-primary">Country Cork</span>
+                    </p>
+                    <!-- price -->
+                    <div class="flex items-center gap-2">
+                      <h1 class="text-primary text-lg underline">$17.85</h1>
+                      <p class="text-base text-[#d6d6d6] line-through">
+                        $19.80
+                      </p>
+                    </div>
+                    <!-- progress -->
+                    <div class="my-2">
+                      <!-- progress bar -->
+                      <div
+                        class="w-full h-[5px] bg-lightGray rounded-lg relative"
+                      >
+                        <div
+                          class="absolute w-[70%] h-[5px] bg-darkPrimary rounded-lg"
+                        ></div>
+                      </div>
+                      <div class="flex items-center justify-between mt-2">
+                        <span class="text-sm">Sold : 108 / 387</span>
+                        <span class="text-sm text-darkPrimary">27.91%</span>
+                      </div>
+                    </div>
+
+                    <!-- add button -->
+                    <button
+                      class="flex items-center justify-center gap-2 py-3 px-5 bg-darkPrimary rounded w-full mt-3 hover:bg-amber transition-all duration-300"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-white"></i>
+                      <p class="text-sm text-white text-center font-bold">
+                        Add to cart
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single product -->
+              <div class="swiper-slide">
+                <div
+                  class="rounded-3xl overflow-hidden border border-lightGray hover:border-primary transition-all duration-300"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+                    >
+                      13%
+                    </div>
+
+                    <div
+                      class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+                    >
+                      New
+                    </div>
+                  </div>
+                  <!-- product image -->
+                  <div
+                    class="flex items-center justify-center w-full group/product relative"
+                  >
+                    <img
+                      class="h-[195px] block w-[185px] group-hover/product:hidden"
+                      src="/images/product-2-1.jpg"
+                      alt="product image"
+                    />
+                    <img
+                      class="h-[195px] hidden w-[185px] group-hover/product:block"
+                      src="/images/product-4-2.jpg"
+                      alt="product image"
+                    />
+
+                    <!-- product options  -->
+                    <div class="product-options">
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            quick view
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            compare
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="p-y px-3 relative group">
+                        <button>
+                          <i
+                            class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            Wishlist
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- product details -->
+                  <div class="px-5 mb-7">
+                    <span
+                      class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                      >Baking Material</span
+                    >
+                    <h1
+                      class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+                    >
+                      Foster Farms Takeout Crispy Classic
+                    </h1>
+                    <!-- ratings -->
+                    <div class="flex items-center gap-2 mb-2">
+                      <div class="flex items-center text-sm text-darkGray">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <span class="text-darkGray text-sm">0</span>
+                    </div>
+                    <p class="text-darkGray font-normal mb-3">
+                      By <span class="text-primary">Country Cork</span>
+                    </p>
+                    <!-- price -->
+                    <div class="flex items-center gap-2">
+                      <h1 class="text-primary text-lg underline">$17.85</h1>
+                      <p class="text-base text-[#d6d6d6] line-through">
+                        $19.80
+                      </p>
+                    </div>
+                    <!-- progress -->
+                    <div class="my-2">
+                      <!-- progress bar -->
+                      <div
+                        class="w-full h-[5px] bg-lightGray rounded-lg relative"
+                      >
+                        <div
+                          class="absolute w-[70%] h-[5px] bg-darkPrimary rounded-lg"
+                        ></div>
+                      </div>
+                      <div class="flex items-center justify-between mt-2">
+                        <span class="text-sm">Sold : 108 / 387</span>
+                        <span class="text-sm text-darkPrimary">27.91%</span>
+                      </div>
+                    </div>
+
+                    <!-- add button -->
+                    <button
+                      class="flex items-center justify-center gap-2 py-3 px-5 bg-darkPrimary rounded w-full mt-3 hover:bg-amber transition-all duration-300"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-white"></i>
+                      <p class="text-sm text-white text-center font-bold">
+                        Add to cart
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single product -->
+              <div class="swiper-slide">
+                <div
+                  class="rounded-3xl overflow-hidden border border-lightGray hover:border-primary transition-all duration-300"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+                    >
+                      13%
+                    </div>
+
+                    <div
+                      class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+                    >
+                      New
+                    </div>
+                  </div>
+                  <!-- product image -->
+                  <div
+                    class="flex items-center justify-center w-full group/product relative"
+                  >
+                    <img
+                      class="h-[195px] block w-[185px] group-hover/product:hidden"
+                      src="/images/product-2-1.jpg"
+                      alt="product image"
+                    />
+                    <img
+                      class="h-[195px] hidden w-[185px] group-hover/product:block"
+                      src="/images/product-4-2.jpg"
+                      alt="product image"
+                    />
+
+                    <!-- product options  -->
+                    <div class="product-options">
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            quick view
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            compare
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="p-y px-3 relative group">
+                        <button>
+                          <i
+                            class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            Wishlist
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- product details -->
+                  <div class="px-5 mb-7">
+                    <span
+                      class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                      >Baking Material</span
+                    >
+                    <h1
+                      class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+                    >
+                      Foster Farms Takeout Crispy Classic
+                    </h1>
+                    <!-- ratings -->
+                    <div class="flex items-center gap-2 mb-2">
+                      <div class="flex items-center text-sm text-darkGray">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <span class="text-darkGray text-sm">0</span>
+                    </div>
+                    <p class="text-darkGray font-normal mb-3">
+                      By <span class="text-primary">Country Cork</span>
+                    </p>
+                    <!-- price -->
+                    <div class="flex items-center gap-2">
+                      <h1 class="text-primary text-lg underline">$17.85</h1>
+                      <p class="text-base text-[#d6d6d6] line-through">
+                        $19.80
+                      </p>
+                    </div>
+                    <!-- progress -->
+                    <div class="my-2">
+                      <!-- progress bar -->
+                      <div
+                        class="w-full h-[5px] bg-lightGray rounded-lg relative"
+                      >
+                        <div
+                          class="absolute w-[70%] h-[5px] bg-darkPrimary rounded-lg"
+                        ></div>
+                      </div>
+                      <div class="flex items-center justify-between mt-2">
+                        <span class="text-sm">Sold : 108 / 387</span>
+                        <span class="text-sm text-darkPrimary">27.91%</span>
+                      </div>
+                    </div>
+
+                    <!-- add button -->
+                    <button
+                      class="flex items-center justify-center gap-2 py-3 px-5 bg-darkPrimary rounded w-full mt-3 hover:bg-amber transition-all duration-300"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-white"></i>
+                      <p class="text-sm text-white text-center font-bold">
+                        Add to cart
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single product -->
+              <div class="swiper-slide">
+                <div
+                  class="rounded-3xl overflow-hidden border border-lightGray hover:border-primary transition-all duration-300"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+                    >
+                      13%
+                    </div>
+
+                    <div
+                      class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+                    >
+                      New
+                    </div>
+                  </div>
+                  <!-- product image -->
+                  <div
+                    class="flex items-center justify-center w-full group/product relative"
+                  >
+                    <img
+                      class="h-[195px] block w-[185px] group-hover/product:hidden"
+                      src="/images/product-2-1.jpg"
+                      alt="product image"
+                    />
+                    <img
+                      class="h-[195px] hidden w-[185px] group-hover/product:block"
+                      src="/images/product-4-2.jpg"
+                      alt="product image"
+                    />
+
+                    <!-- product options  -->
+                    <div class="product-options">
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            quick view
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            compare
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="p-y px-3 relative group">
+                        <button>
+                          <i
+                            class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            Wishlist
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- product details -->
+                  <div class="px-5 mb-7">
+                    <span
+                      class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                      >Baking Material</span
+                    >
+                    <h1
+                      class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+                    >
+                      Foster Farms Takeout Crispy Classic
+                    </h1>
+                    <!-- ratings -->
+                    <div class="flex items-center gap-2 mb-2">
+                      <div class="flex items-center text-sm text-darkGray">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <span class="text-darkGray text-sm">0</span>
+                    </div>
+                    <p class="text-darkGray font-normal mb-3">
+                      By <span class="text-primary">Country Cork</span>
+                    </p>
+                    <!-- price -->
+                    <div class="flex items-center gap-2">
+                      <h1 class="text-primary text-lg underline">$17.85</h1>
+                      <p class="text-base text-[#d6d6d6] line-through">
+                        $19.80
+                      </p>
+                    </div>
+                    <!-- progress -->
+                    <div class="my-2">
+                      <!-- progress bar -->
+                      <div
+                        class="w-full h-[5px] bg-lightGray rounded-lg relative"
+                      >
+                        <div
+                          class="absolute w-[70%] h-[5px] bg-darkPrimary rounded-lg"
+                        ></div>
+                      </div>
+                      <div class="flex items-center justify-between mt-2">
+                        <span class="text-sm">Sold : 108 / 387</span>
+                        <span class="text-sm text-darkPrimary">27.91%</span>
+                      </div>
+                    </div>
+
+                    <!-- add button -->
+                    <button
+                      class="flex items-center justify-center gap-2 py-3 px-5 bg-darkPrimary rounded w-full mt-3 hover:bg-amber transition-all duration-300"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-white"></i>
+                      <p class="text-sm text-white text-center font-bold">
+                        Add to cart
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single product -->
+              <div class="swiper-slide">
+                <div
+                  class="rounded-3xl overflow-hidden border border-lightGray hover:border-primary transition-all duration-300"
+                >
+                  <div class="flex items-center justify-between">
+                    <div
+                      class="bg-primary py-2 px-5 rounded-br-2xl text-white text-xs"
+                    >
+                      13%
+                    </div>
+
+                    <div
+                      class="bg-darkRed py-2 px-5 rounded-bl-2xl text-white text-xs"
+                    >
+                      New
+                    </div>
+                  </div>
+                  <!-- product image -->
+                  <div
+                    class="flex items-center justify-center w-full group/product relative"
+                  >
+                    <img
+                      class="h-[195px] block w-[185px] group-hover/product:hidden"
+                      src="/images/product-2-1.jpg"
+                      alt="product image"
+                    />
+                    <img
+                      class="h-[195px] hidden w-[185px] group-hover/product:block"
+                      src="/images/product-4-2.jpg"
+                      alt="product image"
+                    />
+
+                    <!-- product options  -->
+                    <div class="product-options">
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-24 bg-primary rounded py-2 -left-5 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            quick view
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-10 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="py-2 px-3 border-r border-primary relative group"
+                      >
+                        <button>
+                          <i
+                            class="fa-solid fa-code-compare transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-20 bg-primary rounded py-2 -left-3 right-0 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            compare
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-8 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="p-y px-3 relative group">
+                        <button>
+                          <i
+                            class="fa-regular fa-heart transition-all duration-500 text-primary hover:text-amber"
+                          ></i>
+                        </button>
+                        <div
+                          class="absolute -top-12 min-w-18 bg-primary rounded py-2 -left-2 -right-5 hover-animation"
+                        >
+                          <p
+                            class="whitespace-nowrap px-2 text-sm text-center text-white"
+                          >
+                            Wishlist
+                          </p>
+                          <div
+                            class="size-4 p-1 bg-primary absolute left-7 rotate-45 -bottom-1 -z-10"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- product details -->
+                  <div class="px-5 mb-7">
+                    <span
+                      class="text-darkGray text-xs transition-colors duration-300 hover:text-primary"
+                      >Baking Material</span
+                    >
+                    <h1
+                      class="text-darkGreen transition-colors duration-300 hover:text-primary mb-4"
+                    >
+                      Foster Farms Takeout Crispy Classic
+                    </h1>
+                    <!-- ratings -->
+                    <div class="flex items-center gap-2 mb-2">
+                      <div class="flex items-center text-sm text-darkGray">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <span class="text-darkGray text-sm">0</span>
+                    </div>
+                    <p class="text-darkGray font-normal mb-3">
+                      By <span class="text-primary">Country Cork</span>
+                    </p>
+                    <!-- price -->
+                    <div class="flex items-center gap-2">
+                      <h1 class="text-primary text-lg underline">$17.85</h1>
+                      <p class="text-base text-[#d6d6d6] line-through">
+                        $19.80
+                      </p>
+                    </div>
+                    <!-- progress -->
+                    <div class="my-2">
+                      <!-- progress bar -->
+                      <div
+                        class="w-full h-[5px] bg-lightGray rounded-lg relative"
+                      >
+                        <div
+                          class="absolute w-[70%] h-[5px] bg-darkPrimary rounded-lg"
+                        ></div>
+                      </div>
+                      <div class="flex items-center justify-between mt-2">
+                        <span class="text-sm">Sold : 108 / 387</span>
+                        <span class="text-sm text-darkPrimary">27.91%</span>
+                      </div>
+                    </div>
+
+                    <!-- add button -->
+                    <button
+                      class="flex items-center justify-center gap-2 py-3 px-5 bg-darkPrimary rounded w-full mt-3 hover:bg-amber transition-all duration-300"
+                    >
+                      <i class="fa-solid fa-cart-shopping text-white"></i>
+                      <p class="text-sm text-white text-center font-bold">
+                        Add to cart
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-button-prev relative">
+              <button
+                class="flex items-center justify-center size-12 rounded-full bg-lightGray text-darkGray hover:bg-primary hover:text-white transition-all duration-300 absolute left-[2px]"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+            <div class="swiper-button-next relative">
+              <button
+                class="flex items-center justify-center size-12 rounded-full bg-lightGray text-darkGray hover:bg-primary hover:text-white transition-all duration-300 absolute right-[2px]"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- slider end -->
+        </div>
+      </div>
+    </section>
+    <!-- best sells section end -->
+
+    <!-- deals section start -->
+    <section class="mb-20">
+      <div class="container">
+        <!-- heading -->
+        <h1 class="text-darkGreen text-3xl">Deals Of The Day</h1>
+        <!-- deals cards start -->
+        <div
+          class="grid gap-x-5 gap-y-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-6"
+        >
+          <!-- single card -->
+          <div class="rounded-3xl relative h-[410px]">
+            <img
+              class="w-full h-full rounded-3xl object-cover"
+              src="/images/banner-6-min.png"
+              alt="banner image"
+            />
+            <div
+              class="absolute -bottom-[100px] left-2 right-2 z-50 hover:-translate-y-2 transition-all duration-300"
+            >
+              <!-- count down start -->
+              <div class="flex item-center justify-center gap-2 flex-wrap">
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+              </div>
+              <!-- count down end -->
+
+              <!-- details start -->
+              <div
+                class="mt-5 mb-10 bg-white p-6 rounded-xl border border-lightGray"
+              >
+                <a class="quicksand text-darkGreen"
+                  >Organic Cage Grade A Large Eggs</a
+                >
+                <p class="my-2">
+                  By: <span class="text-primary">Hamber hill</span>
+                </p>
+                <div class="flex items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <h1 class="text-primary text-lg underline">$17.85</h1>
+                    <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                  </div>
+                  <button
+                    class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                  >
+                    <i class="fa-solid fa-cart-shopping text-darkPrimary"></i>
+                    <p class="text-sm text-darkPrimary font-medium">Add</p>
+                  </button>
+                </div>
+              </div>
+              <!-- details end -->
+            </div>
+          </div>
+          <!-- single card -->
+          <div class="rounded-3xl relative h-[410px]">
+            <img
+              class="w-full h-full rounded-3xl object-cover"
+              src="/images/banner-5-min.png"
+              alt="banner image"
+            />
+            <div
+              class="absolute -bottom-[100px] left-2 right-2 z-50 hover:-translate-y-2 transition-all duration-300"
+            >
+              <!-- count down start -->
+              <div class="flex item-center justify-center gap-2 flex-wrap">
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+              </div>
+              <!-- count down end -->
+
+              <!-- details start -->
+              <div
+                class="mt-5 mb-10 bg-white p-6 rounded-xl border border-lightGray"
+              >
+                <a class="quicksand text-darkGreen"
+                  >Organic Cage Grade A Large Eggs</a
+                >
+                <p class="my-2">
+                  By: <span class="text-primary">Hamber hill</span>
+                </p>
+                <div class="flex items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <h1 class="text-primary text-lg underline">$17.85</h1>
+                    <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                  </div>
+                  <button
+                    class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                  >
+                    <i class="fa-solid fa-cart-shopping text-darkPrimary"></i>
+                    <p class="text-sm text-darkPrimary font-medium">Add</p>
+                  </button>
+                </div>
+              </div>
+              <!-- details end -->
+            </div>
+          </div>
+          <!-- single card -->
+          <div class="rounded-3xl relative h-[410px]">
+            <img
+              class="w-full h-full rounded-3xl object-cover"
+              src="/images/banner-7-min.png"
+              alt="banner image"
+            />
+            <div
+              class="absolute -bottom-[100px] left-2 right-2 z-50 hover:-translate-y-2 transition-all duration-300"
+            >
+              <!-- count down start -->
+              <div class="flex item-center justify-center gap-2 flex-wrap">
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+              </div>
+              <!-- count down end -->
+
+              <!-- details start -->
+              <div
+                class="mt-5 mb-10 bg-white p-6 rounded-xl border border-lightGray"
+              >
+                <a class="quicksand text-darkGreen"
+                  >Organic Cage Grade A Large Eggs</a
+                >
+                <p class="my-2">
+                  By: <span class="text-primary">Hamber hill</span>
+                </p>
+                <div class="flex items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <h1 class="text-primary text-lg underline">$17.85</h1>
+                    <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                  </div>
+                  <button
+                    class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                  >
+                    <i class="fa-solid fa-cart-shopping text-darkPrimary"></i>
+                    <p class="text-sm text-darkPrimary font-medium">Add</p>
+                  </button>
+                </div>
+              </div>
+              <!-- details end -->
+            </div>
+          </div>
+          <!-- single card -->
+          <div class="rounded-3xl relative h-[410px]">
+            <img
+              class="w-full h-full rounded-3xl object-cover"
+              src="/images/banner-8-min.png"
+              alt="banner image"
+            />
+            <div
+              class="absolute -bottom-[100px] left-2 right-2 z-50 hover:-translate-y-2 transition-all duration-300"
+            >
+              <!-- count down start -->
+              <div class="flex item-center justify-center gap-2 flex-wrap">
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+                <div class="rounded-md bg-white px-3 py-2">
+                  <p class="text-xl text-darkPrimary text-center">300</p>
+                  <span class="text-sm text-center">Days</span>
+                </div>
+              </div>
+              <!-- count down end -->
+
+              <!-- details start -->
+              <div
+                class="mt-5 mb-10 bg-white p-6 rounded-xl border border-lightGray"
+              >
+                <a class="quicksand text-darkGreen"
+                  >Organic Cage Grade A Large Eggs</a
+                >
+                <p class="my-2">
+                  By: <span class="text-primary">Hamber hill</span>
+                </p>
+                <div class="flex items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <h1 class="text-primary text-lg underline">$17.85</h1>
+                    <p class="text-base text-[#d6d6d6] line-through">$19.80</p>
+                  </div>
+                  <button
+                    class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+                  >
+                    <i class="fa-solid fa-cart-shopping text-darkPrimary"></i>
+                    <p class="text-sm text-darkPrimary font-medium">Add</p>
+                  </button>
+                </div>
+              </div>
+              <!-- details end -->
+            </div>
+          </div>
+        </div>
+        <!-- deals cards end -->
+      </div>
+    </section>
+    <!-- deals section end -->
+
+    <script
+      src="https://kit.fontawesome.com/12cd1c9556.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
