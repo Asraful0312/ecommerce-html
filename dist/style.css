@@ -1329,6 +1329,66 @@ video {
   background-image: url(/images/notice.jpg);
 }
 
+.bg-\[url\(\'banner-1\.png\'\)\] {
+  background-image: url('banner-1.png');
+}
+
+.bg-\[url\(\'banner-2\.png\'\)\] {
+  background-image: url('banner-2.png');
+}
+
+.bg-\[url\(\'banner-3\.png\'\)\] {
+  background-image: url('banner-3.png');
+}
+
+.bg-\[url\(\'banner-7-min\.png\'\)\] {
+  background-image: url('banner-7-min.png');
+}
+
+.bg-\[url\(notice\.jpg\)\] {
+  background-image: url(notice.jpg);
+}
+
+.bg-\[url\(\'\.\/imagesbanner-1\.png\'\)\] {
+  background-image: url('./imagesbanner-1.png');
+}
+
+.bg-\[url\(\'\.\/imagesbanner-2\.png\'\)\] {
+  background-image: url('./imagesbanner-2.png');
+}
+
+.bg-\[url\(\'\.\/imagesbanner-3\.png\'\)\] {
+  background-image: url('./imagesbanner-3.png');
+}
+
+.bg-\[url\(\'\.\/imagesbanner-7-min\.png\'\)\] {
+  background-image: url('./imagesbanner-7-min.png');
+}
+
+.bg-\[url\(\.\/imagesnotice\.jpg\)\] {
+  background-image: url(./imagesnotice.jpg);
+}
+
+.bg-\[url\(\'\.\/images\/banner-1\.png\'\)\] {
+  background-image: url('./images/banner-1.png');
+}
+
+.bg-\[url\(\'\.\/images\/banner-2\.png\'\)\] {
+  background-image: url('./images/banner-2.png');
+}
+
+.bg-\[url\(\'\.\/images\/banner-3\.png\'\)\] {
+  background-image: url('./images/banner-3.png');
+}
+
+.bg-\[url\(\'\.\/images\/banner-7-min\.png\'\)\] {
+  background-image: url('./images/banner-7-min.png');
+}
+
+.bg-\[url\(\.\/images\/notice\.jpg\)\] {
+  background-image: url(./images/notice.jpg);
+}
+
 .bg-cover {
   background-size: cover;
 }
