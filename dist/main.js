@@ -11,6 +11,13 @@ const categoryList = document.getElementById("categoryList");
 const shopItemContainer = document.getElementById("shopItemContainer");
 const expandBtn = document.getElementById("expandBtn");
 const icon = document.getElementById("icon");
+const popupOfferContainer = document.getElementById("popupOfferContainer");
+const popupOfferParent = document.getElementById("popupOfferParent");
+const popupCloseBtn = document.getElementById("popupCloseBtn");
+const quickViewCloseBtn = document.getElementById("quickViewCloseBtn");
+const quickViewBtn = document.getElementById("quickViewBtn");
+const quickViewCard = document.querySelector(".quickViewCard");
+const quickViewContainer = document.querySelector(".quickViewContainer");
 
 //handle category and home toggle in mobile menu
 function handleToggle(btn1, btn2, list1, list2) {
@@ -36,23 +43,38 @@ mobileMenuBtn.addEventListener("click", () => {
 });
 
 // handle mobile menu show and hide in close button and click outside of the mobile menu
-function handleMobileMenu(container) {
+function handleHide(container) {
   container.classList.add("hidden");
 }
 
-menuCloseBtn.addEventListener("click", () =>
-  handleMobileMenu(mobileMenuContainer)
-);
+menuCloseBtn.addEventListener("click", () => handleHide(mobileMenuContainer));
 
 mobileMenuContainer.addEventListener("click", () =>
-  handleMobileMenu(mobileMenuContainer)
+  handleHide(mobileMenuContainer)
 );
+
+popupOfferParent.addEventListener("click", () => handleHide(popupOfferParent));
+
+popupCloseBtn.addEventListener("click", () => handleHide(popupOfferParent));
+
+quickViewCard.addEventListener("click", () => handleHide(quickViewCard));
+
+quickViewCloseBtn.addEventListener("click", () => handleHide(quickViewCard));
+
+//handle showing
+function handleShow(el) {
+  el.classList.remove("hidden");
+}
+
+quickViewBtn.addEventListener("click", () => handleShow(quickViewCard));
 
 // stop hide the menu if click is inside the menu
 function stopClickInside(e) {
   e.stopPropagation();
 }
 mobileMenu.addEventListener("click", (e) => stopClickInside(e));
+popupOfferContainer.addEventListener("click", (e) => stopClickInside(e));
+quickViewContainer.addEventListener("click", (e) => stopClickInside(e));
 
 // handle show and hide categories in big screen
 categoryBtn.addEventListener("click", () => {

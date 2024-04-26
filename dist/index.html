@@ -171,42 +171,73 @@
               <!-- mobile cart and menu -->
               <div class="relative xl:hidden flex items-center gap-6">
                 <!-- mobile cart -->
-                <div
-                  class="relative flex items-center gap-2 cursor-pointer group"
-                >
-                  <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                  <p class="text-darkGray">Cart</p>
-                  <div
-                    class="bg-white absolute top-10 right-0 p-5 border border-gray-200 w-[400px] shadow-sm rounded-lg hover-animation z-50"
-                  >
-                    <p class="text-center text-darkGray mt-5">
-                      No product in the cart
-                    </p>
-                    <div class="space-y-4 pt-3">
-                      <div class="flex items-center gap-7">
-                        <img
-                          class="size-10"
-                          src="./images/product-2-1.jpg"
-                          alt="product"
-                        />
-                        <p class="truncate text-center">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quia, maxime!
-                        </p>
-                        <button
-                          class="bg-primary text-white font-bold px-3 py-2 rounded hover:bg-amber transition-colors duration-500 text-sm"
+                <div class="relative">
+                  <div class="relative flex items-center gap-2 group">
+                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                    <p class="text-darkGray">Cart</p>
+                    <div
+                      class="bg-white absolute top-10 right-0 border border-gray-200 w-[280px] md:w-[500px] shadow-sm rounded-lg translate-y-7 opacity-0 group-hover:translate-y-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-[800]"
+                    >
+                      <p class="text-center text-darkGray">
+                        No product in the cart
+                      </p>
+                      <div class="space-y-4 pt-7 pb-5 border-b px-5">
+                        <div class="flex flex-wrap items-center gap-5">
+                          <img
+                            class="size-8 md:size-14 border"
+                            src="./images/product-2-1.jpg"
+                            alt="product"
+                          />
+
+                          <div>
+                            <h1 class="font-bold text-center">
+                              Foster Farms Takeout Crispy Classic
+                            </h1>
+                            <p>1 x $16</p>
+                          </div>
+
+                          <div
+                            class="flex flex-wrap items-center justify-center bg-transparent text-primary group size-7 rounded-full cursor-pointer border"
+                          >
+                            <i
+                              class="fa-solid fa-x text-xs group-hover:rotate-180 transition-all duration-300"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-5">
+                        <h1 class="text-darkGray">
+                          SubTotal: <span class="text-primary">$38.90</span>
+                        </h1>
+                        <div
+                          class="flex flex-wrap items-center justify-between gap-3 mt-3"
                         >
-                          View
-                        </button>
+                          <a
+                            class="py-2 px-5 bg-primary hover:bg-amber transition-all duration-300 text-white rounded-md"
+                            href=""
+                            >View Cart</a
+                          >
+                          <a
+                            class="py-2 px-5 bg-primary hover:bg-amber transition-all duration-300 text-white rounded-md"
+                            href=""
+                            >Checkout</a
+                          >
+                          <a
+                            class="py-2 px-5 bg-primary hover:bg-amber transition-all duration-300 text-white rounded-md"
+                            href=""
+                            >Empty Cart</a
+                          >
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div
+                    class="absolute -top-7 left-5 flex items-center justify-center bg-primary text-white text-sm rounded-full size-5"
+                  >
+                    <span>0</span>
+                  </div>
                 </div>
-                <div
-                  class="absolute -top-5 left-5 flex items-center justify-center bg-primary text-white text-sm rounded-full size-5"
-                >
-                  <span>0</span>
-                </div>
+
                 <button id="mobileMenuBtn">
                   <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
@@ -214,7 +245,7 @@
                 <!-- mobile menu -->
                 <div
                   id="mobileMenuContainer"
-                  class="fixed bg-black/50 h-full top-0 left-0 w-full flex items-start z-50 hidden"
+                  class="fixed bg-black/50 h-full top-0 left-0 w-full flex items-start z-[999] hidden"
                 >
                   <div
                     id="mobileMenu"
@@ -1038,6 +1069,92 @@
     </header>
     <!-- header area end -->
 
+    <!-- popup offer card start -->
+    <section
+      id="popupOfferParent"
+      class="fixed inset-0 bg-black/30 z-[1000] px-5"
+    >
+      <!-- offer container -->
+      <div
+        id="popupOfferContainer"
+        class="bg-white rounded-[24px] w-full md:w-[80%] mx-auto relative mt-7"
+      >
+        <div
+          class="bg-[url('./images/popup-1.png')] py-3 px-6 md:px-16 bg-cover"
+        >
+          <div class="flex item-center justify-between">
+            <h1 class="font-bold text-sm sm:text-lg text-amber mb-3">
+              Deals of the Day
+            </h1>
+            <i
+              id="popupCloseBtn"
+              class="fa-solid fa-xmark md:text-3xl text-darkGray cursor-pointer"
+            ></i>
+          </div>
+
+          <!-- offer title -->
+          <h1 class="font-bold text-xl lg:text-5xl text-darkGreen mb-3">
+            Gorton’s Beer <br />
+            Battered Fish Fillets
+          </h1>
+
+          <!-- offer price -->
+          <div class="flex items-center gap-2 lg:gap-4 my-3 lg:my-6">
+            <h1 class="text-darkPrimary text-xl lg:text-[50px] font-bold">
+              $17.85
+            </h1>
+            <p
+              class="text-base lg:text-3xl text-[#d6d6d6] line-through font-bold"
+            >
+              $19.80
+            </p>
+          </div>
+
+          <p class="pl-4 mb-5">Hurry Up! Offer End In:</p>
+          <!-- offer countdown -->
+          <div class="flex item-center gap-2 flex-wrap">
+            <div class="bg-white py-1 px-4 border-2 border-darkPrimary rounded">
+              <p class="text-darkPrimary text-center text-lg">332</p>
+              <span class="text-sm text-center">Days</span>
+            </div>
+            <div class="bg-white py-1 px-4 border-2 border-darkPrimary rounded">
+              <p class="text-darkPrimary text-center text-lg">05</p>
+              <span class="text-sm text-center">Hours</span>
+            </div>
+            <div class="bg-white py-1 px-4 border-2 border-darkPrimary rounded">
+              <p class="text-darkPrimary text-center text-lg">29</p>
+              <span class="text-sm text-center">Mins</span>
+            </div>
+            <div class="bg-white py-1 px-4 border-2 border-darkPrimary rounded">
+              <p class="text-darkPrimary text-center text-lg">39</p>
+              <span class="text-sm text-center">Secs</span>
+            </div>
+          </div>
+          <!-- offer product rating -->
+          <div class="flex items-center gap-2 mb-4 mt-8">
+            <div class="flex items-center text-sm text-darkGray">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="text-darkGray text-sm">0</span>
+          </div>
+
+          <!-- offer add to cart button -->
+          <!-- add button -->
+          <button
+            class="flex items-center justify-center gap-2 py-3 px-5 bg-darkPrimary rounded mt-3 mb-5 lg:mb-20 hover:bg-amber transition-all duration-300"
+          >
+            <i class="fa-solid fa-cart-shopping text-white"></i>
+            <p class="text-sm text-white text-center font-bold">Add to cart</p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- popup offer card end -->
+
     <!-- hero section start -->
     <section class="mt-8 sm:mt-16">
       <div class="container relative h-[300px] sm:h-[538px]">
@@ -1075,7 +1192,7 @@
 
           <!-- navigation left -->
           <button
-            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] left-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+            class="flex items-center justify-center size-8 sm:size-10 rounded-full bg-white absolute top-[50%] left-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
           >
             <i
               class="fa-solid fa-chevron-left text-darkGray text-sm sm:text-2xl"
@@ -1084,7 +1201,7 @@
 
           <!-- navigation right -->
           <button
-            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] right-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+            class="flex items-center justify-center size-8 sm:size-10 rounded-full bg-white absolute top-[50%] right-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
           >
             <i
               class="fa-solid fa-chevron-right text-darkGray text-sm sm:text-2xl"
@@ -1099,7 +1216,7 @@
             src="./images/slider-2-min.png"
             alt="slider image"
           />
-          <div class="absolute left-10 top-10 sm:left-28 sm:top-28 z-50">
+          <div class="absolute left-10 top-10 sm:left-28 sm:top-28 z-30">
             <h1
               class="text-darkGreen text-2xl sm:text-5xl lg:text-6xl font-bold"
             >
@@ -1122,16 +1239,11 @@
                 Subscribe
               </button>
             </div>
-            <!-- <button
-              class="py-2 px-5 lg:py-5 lg:px-6 rounded-[44px] text-white bg-primary mt-3 hidden sm:block"
-            >
-              Subscribe
-            </button> -->
           </div>
 
           <!-- navigation left -->
           <button
-            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] left-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+            class="flex items-center justify-center size-8 sm:size-10 rounded-full bg-white absolute top-[50%] left-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
           >
             <i
               class="fa-solid fa-chevron-left text-darkGray text-sm sm:text-2xl"
@@ -1140,7 +1252,7 @@
 
           <!-- navigation right -->
           <button
-            class="flex items-center justify-center size-5 sm:size-10 rounded-full bg-white absolute top-[50%] right-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
+            class="flex items-center justify-center size-8 sm:size-10 rounded-full bg-white absolute top-[50%] right-12 transition-all duration-500 invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50"
           >
             <i
               class="fa-solid fa-chevron-right text-darkGray text-sm sm:text-2xl"
@@ -1396,7 +1508,7 @@
               Products
             </h1>
             <button
-              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white mt-7 hover:bg-amber transition-all duration-500"
+              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white mt-7 transition-all duration-500"
             >
               Shop Now <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -1408,7 +1520,7 @@
               Make your Breakfast Healthy & Easy
             </h1>
             <button
-              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white hover:bg-amber transition-all duration-500 mt-7"
+              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white transition-all duration-500 mt-7"
             >
               Shop Now <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -1420,7 +1532,7 @@
               The Best Organic Products Online
             </h1>
             <button
-              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white hover:bg-amber transition-all duration-500 mt-7"
+              class="flex items-center gap-3 text-sm bg-primary py-2 px-3 rounded text-white transition-all duration-500 mt-7"
             >
               Shop Now <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -1517,10 +1629,10 @@
 
               <!-- product options  -->
               <div
-                class="flex items-center min-w-24 rounded border border-primary absolute bg-white z-50 translate-y-7 opacity-0 invisible group-hover/product:translate-y-0 group-hover/product:visible group-hover/product:opacity-100 transition-all duration-300"
+                class="product-options"
               >
                 <div class="py-2 px-3 border-r border-primary relative group">
-                  <button>
+                  <button id="quickViewBtn">
                     <i
                       class="fa-solid fa-eye transition-all duration-500 text-primary hover:text-amber"
                     ></i>
@@ -1611,10 +1723,112 @@
                 </div>
                 <button
                   class="flex items-center gap-2 py-2 px-5 bg-primary/30 rounded"
+
                 >
+                <i class="fa-solid fa-cart-shopping  text-darkPrimary "></i>
                   <p class="text-sm text-darkPrimary font-medium">Add</p>
                 </button>
               </div>
+            </div>
+
+            <!-- quick view card -->
+            <div class="fixed inset-0 bg-primary/20 z-[800] quickViewCard px-5 hidden">
+              <!-- quickview container -->
+              <div
+                class="quickViewContainer w-full md:w-[60%] min-h-screen bg-white mx-auto  rounded-2xl overflow-x-hidden "
+              >
+              <!-- quickViewCloseBtn -->
+              <div id="quickViewCloseBtn" class="flex justify-end cursor-pointer">
+                <div class="flex items-center justify-center bg-amber  py-3 px-4 rounded-bl-xl">
+
+                  <i class="fa-solid fa-xmark text-xl"></i>
+                </div>
+              </div>
+
+              <!-- quick view product start -->
+              <div class="flex flex-col lg:flex-row gap-8 px-7">
+                <div class="w-full lg:w-[40%] ">
+                  <!-- quick view slide -->
+                  <div class="p-6 border border-lightGray rounded-xl">
+                    <img
+                    class="w-full h-full"
+                    src="./images/product-2-1.jpg"
+                    alt="product image"
+                  />
+                  </div>
+                  <!-- quick view slider pagination -->
+                  <div class="flex flex-wrap items-center gap-2 mt-8">
+                    <div class="flex items-center justify-center p-1 border border-gray-200 rounded-xl">
+                          <img
+                    class="size-12"
+                    src="./images/product-2-1.jpg"
+                    alt="product image"
+                  />
+                    </div>
+                     <div class="flex items-center justify-center p-1 border border-gray-200 rounded-xl">
+                          <img
+                    class="size-12"
+                    src="./images/product-2-1.jpg"
+                    alt="product image"
+                  />
+                    </div>
+                     <div class="flex items-center justify-center p-1 border border-gray-200 rounded-xl">
+                          <img
+                    class="size-12"
+                    src="./images/product-2-1.jpg"
+                    alt="product image"
+                  />
+                    </div>
+                     <div class="flex items-center justify-center p-1 border border-gray-200 rounded-xl">
+                          <img
+                    class="size-12"
+                    src="./images/product-2-1.jpg"
+                    alt="product image"
+                  />
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-[60%]">
+                  <button class="bg-palePink/30 py-1 px-4 text-darkPrimary rounded-md font-bold mb-7">
+                    Sale!
+                  </button>
+
+                  <!-- quick view product title -->
+                     <h1 class="font-bold text-xl lg:text-4xl text-darkGreen mb-3">
+                      Seeds of Change Organic Red Rice
+                    </h1>
+
+                    <!-- quick view reviews -->
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center text-sm text-darkGray">
+                        <i class="fa-solid fa-star text-amber"></i>
+                        <i class="fa-solid fa-star text-amber"></i>
+                        <i class="fa-solid fa-star text-amber"></i>
+                        <i class="fa-regular fa-star"></i>
+              
+                        <i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <p class="text-darkPrimary">(2 customer reviews)</p>
+                    
+                </div>
+                 <!-- offer price -->
+          <div class="flex items-center gap-2 lg:gap-4 my-4 lg:my-6">
+            <h1 class="text-darkPrimary text-xl lg:text-[50px] font-bold">
+              $17.85
+            </h1>
+            <p
+              class="text-base lg:text-3xl text-[#d6d6d6] line-through font-bold"
+            >
+              $19.80
+            </p>
+          </div>
+
+          <p class="mb-4 lg:mb-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem officia, corrupti reiciendis minima nisi modi, quasi, odio minus dolore impedit fuga eum eligendi.
+          </p>
+          <p class="text-amber">279 in Stock</p>
+              </div>
+              <!-- quick view product end -->
             </div>
           </div>
           <!-- single product -->
@@ -3156,3 +3370,4 @@
     <script src="main.js"></script>
   </body>
 </html>
+F
